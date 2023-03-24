@@ -6,20 +6,14 @@
 // 12821 -> да
 
 Console.WriteLine("Введите пятизначное число ");
-int fiveDigitNumber = Convert.ToInt32(Console.ReadLine());
-string stringNumber = Convert.ToString(fiveDigitNumber);
+string number = Console.ReadLine();
 
-if ( stringNumber[0] == stringNumber[4] )
+if (number[0] == number[4] && number[1] == number[3])
 {
-  Console.WriteLine("Да ");
-}
-
-else if( stringNumber[1] == stringNumber[3] )
-{
-  Console.WriteLine("Да ");
+  Console.WriteLine($"Число {number} является палиндромом ");
 }
 
 else
 {
-  Console.WriteLine("Нет ");
+  Console.WriteLine($"Число {number} не является палиндромом ");
 }
